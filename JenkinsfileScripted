@@ -1,7 +1,7 @@
 node{
     
 stage('sourcecode'){
-   git branch: 'master', git credentialsId: '498fe732-4bb7-434f-a92f-aa55ca47b8b9', url: 'https://github.com/Gangadhar-HB/Nodejs-project.git'
+  git credentialsId: '498fe732-4bb7-434f-a92f-aa55ca47b8b9', url: 'https://github.com/Gangadhar-HB/Nodejs-project.git'
 }
 stage('build'){
     nodejs(nodeJSInstallationName:'nodejs-17.1.0'){
