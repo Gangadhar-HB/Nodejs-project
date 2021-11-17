@@ -15,9 +15,8 @@ stage('build'){
     }
     } 	
     stage('UploadintoNexus') {
-       nodejs(nodeJSInstallationName: 'nodejs-17.1.0') {
-          sh 'npm publish'
+         sh 'npm publish'
       }
-      }	
+      	
    
 }
