@@ -11,7 +11,7 @@ stage('build'){
     
   stage('ExecuteSonarQubeReport') {
      nodejs(nodeJSInstallationName: 'nodejs17.1.0') {
-        sh 'npm run sonar'
+        sh 'npm run node sonar-project.js'
     }
       
         } 
