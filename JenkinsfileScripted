@@ -19,5 +19,5 @@ stage('build'){
           sh 'npm publish'
       }
       }	
-    */
+   
 }
