@@ -10,14 +10,14 @@ stage('build'){
     }
     
   stage('ExecuteSonarQubeReport') {
-     nodejs(nodeJSInstallationName: 'nodejs17.1.0') {
+     nodejs(nodeJSInstallationName: 'nodejs-17.1.0') {
         sh 'npm run sonar'
     }
       
         } 
 	/*	
     stage('UploadintoNexus') {
-       nodejs(nodeJSInstallationName: 'nodejs17.1.0') {
+       nodejs(nodeJSInstallationName: 'nodejs-17.1.0') {
           sh 'npm publish'
       }
       }	
